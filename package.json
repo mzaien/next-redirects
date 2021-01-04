@@ -1,6 +1,6 @@
 {
   "name": "next-redirects",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-beta.0",
   "private": false,
   "description": "Redirect compoentn for Next.js",
   "source": "src/index.tsx",
@@ -41,7 +41,6 @@
     "@types/react": "^17.0.0",
     "next": "^10.0.4",
     "react": "^17.0.1",
-    "tsdx": "^0.14.1",
     "typescript": "^4.1.3"
   }
 }
