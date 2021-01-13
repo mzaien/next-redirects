@@ -1,6 +1,6 @@
 {
   "name": "next-redirects",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": false,
   "description": "Redirect compoentn for Next.js",
   "source": "src/index.tsx",
@@ -32,8 +32,8 @@
   "bugs": {
     "url": "https://github.com/Mzaien/next-redirects/issues"
   },
-  "peerDependencies": {
-    "next": ">=10",
-    "react": ">=17"
+  "devDependencies": {
+    "next": "^10.0.5",
+    "react": "^17.0.1"
   }
 }
