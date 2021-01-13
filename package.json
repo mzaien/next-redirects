@@ -1,6 +1,6 @@
 {
   "name": "next-redirects",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "description": "Redirect compoentn for Next.js",
   "source": "src/index.tsx",
@@ -35,9 +35,5 @@
   "peerDependencies": {
     "next": ">=10",
     "react": ">=17"
-  },
-  "devDependencies": {
-    "next": "^10.0.5",
-    "react": "^17.0.1"
   }
 }
