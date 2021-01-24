@@ -15,18 +15,25 @@ export type NextRedirectsProps = {
 const NextRedirects: FC<NextRedirectsProps> = ({
   href,
   condition,
-  fallBack
+  fallBack,
 }) => {
   const router = useRouter();
-  if (condition) {
-    useEffect(() => {
-      router.push(href);
-    }, [condition]);
+  if (!condition === null) {
+    if ((condition = true)) {
+      useEffect(() => {
+        router.push(href);
+      }, [condition]);
+    } else {
+      useEffect(() => {
+        router.push(fallBack ? fallBack : null);
+      }, [condition]);
+    }
   } else {
     useEffect(() => {
-      router.push(fallBack);
-    }, [condition]);
+      router.push(href);
+    }, []);
   }
+
   return null;
 };
 export default NextRedirects;

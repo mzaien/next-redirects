@@ -35,5 +35,9 @@
   "peerDependencies": {
     "next": ">= 9.3.6",
     "react": ">= 16.8.0"
+  },
+  "devDependencies": {
+    "next": "latest",
+    "react": "latest"
   }
 }
