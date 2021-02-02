@@ -1,5 +1,5 @@
 # Next-Redirects
-Redirect compoent for Next.js
+Redirect component for Next.js
 
 ## How to use Next-redirects
 
