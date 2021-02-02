@@ -1,9 +1,9 @@
 # Next-Redirects
 Redirect compoent for Next.js
 
-**## How to use Next-redirects
+## How to use Next-redirects
 
-There is one component that can be used from the library , it can be used in two ways 
+There is one component that can be used from the library , it can be used in two and hald ways 
 
 
 -1  If you have a  switch or more than condition
