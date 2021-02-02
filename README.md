@@ -8,7 +8,7 @@ There is one component that can be used from the library , it can be used in two
 
 -1  If you have a  switch or more than condition
 
-```jsx
+```tsx
 if(user.logedin){
 <NextRedirects href="/Dashboard" />
 }
@@ -36,4 +36,4 @@ switch(condistionX) {
 <NextRedirects href="/main" condition={auth.logedin} fallback="/login"  />
 ```
 
-thats is just and example you can use it for whatever condistion you **want ** 🥳 
+thats is just and example you can use it for whatever condistion you imagine 🥳 
