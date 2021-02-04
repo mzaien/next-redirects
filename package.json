@@ -5,6 +5,8 @@
   "description": "Redirect component for Next.js",
   "source": "src/index.tsx",
   "main": "dist/index.js",
+  "types":"dist/index.d.ts",
+  "type": "module",
   "files": [
     "dist",
     "README.md"
