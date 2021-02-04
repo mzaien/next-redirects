@@ -17,6 +17,11 @@
     "lint": "tsdx lint src linter",
     "prepare": "tsdx build"
   },
+    "exports": {
+      "require": "./dist/index.js",
+      "import": "./dist/next-redirects.esm.js",
+      "default": "./dist/next-redirects.esm.js"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mzaien/next-redirects.git"
