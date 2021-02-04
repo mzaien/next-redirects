@@ -1,3 +1,5 @@
+# ⛔️ Please upgrade to V 1.2.1 and above ⛔️
+
 # Next-Redirects
 Redirect component for Next.js
 
