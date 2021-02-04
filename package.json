@@ -1,6 +1,6 @@
 {
   "name": "next-redirects",
-  "version": "1.1.9",
+  "version": "1.2.0-0",
   "private": false,
   "description": "Redirect component for Next.js",
   "source": "src/index.tsx",
@@ -17,11 +17,11 @@
     "lint": "tsdx lint src linter",
     "prepare": "tsdx build"
   },
-    "exports": {
-      "require": "./dist/index.js",
-      "import": "./dist/next-redirects.esm.js",
-      "default": "./dist/next-redirects.esm.js"
-    },
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/next-redirects.esm.js",
+    "default": "./dist/next-redirects.esm.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mzaien/next-redirects.git"
