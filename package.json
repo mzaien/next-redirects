@@ -19,7 +19,6 @@
   },
   "exports": {
     "require": "./dist/index.js",
-    "default": "./dist/next-redirects.esm.js"
   },
   "repository": {
     "type": "git",
