@@ -8,7 +8,9 @@ export default function NextRedirects(
 ) {
   const router = useRouter();
   useEffect(() => {
-    router.push(condition ? href : fallBack ? fallBack : router.asPath);
+    router.push(
+      condition ? href : fallBack !== undefined ? fallBack : router.asPath
+    );
   }, [condition]);
   return null;
 }
