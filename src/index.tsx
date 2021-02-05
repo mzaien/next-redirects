@@ -10,11 +10,11 @@ type nextRedirectsprop = {
 export default function NextRedirects({
   href,
   condition,
-  // fallBack,
+  fallBack,
 }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {
-    router.push(href);
-  }, [condition]); 
+    router.push(condition === true ? href : fallBack);
+  }, [condition]);
   return null;
 }
