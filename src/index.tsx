@@ -1,31 +1,20 @@
-import { useEffect, FC } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-export type NextRedirectsProps = {
-  /**
-   * URL to your redirection.
-   * And the boolean the decides
-   * & fallback link for false condition
-   */
-  href: string;
-  fallBack?: string;
-  condition?: boolean;
-};
-
-const NextRedirects: FC<NextRedirectsProps> = ({
-  href,
-  condition,
-  fallBack,
-}) => {
+export default function NextRedirects(
+  href: string,
+  condition?: boolean,
+  fallBack?: string
+) {
   const router = useRouter();
-  if (!condition === null) {
-    if ((condition = true)) {
+  if (condition !== undefined) {
+    if (condition === true) {
       useEffect(() => {
         router.push(href);
       }, [condition]);
     } else {
       useEffect(() => {
-        router.push(fallBack ? fallBack : null);
+        fallBack ? router.push(fallBack) : null;
       }, [condition]);
     }
   } else {
@@ -35,5 +24,4 @@ const NextRedirects: FC<NextRedirectsProps> = ({
   }
 
   return null;
-};
-export default NextRedirects;
+}
