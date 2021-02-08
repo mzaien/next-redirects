@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 type nextRedirectsprop = {
   href: string;
-  condition: boolean;
+  condition?: boolean;
   fallBack?: string;
 };
 
@@ -14,9 +14,11 @@ export default function NextRedirects({
 }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {
-    router.push(
-      condition === true ? href : [fallBack ? fallBack : router.asPath]
-    );
+    condition !== undefined
+      ? router.push(
+          condition === true ? href : fallBack ? fallBack : router.asPath
+        )
+      : router.push(href);
   }, [condition]);
   return null;
 }
