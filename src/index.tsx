@@ -15,10 +15,10 @@ export default function NextRedirects({
   const router = useRouter();
   useEffect(() => {
     condition !== undefined
-      ? router.push(
+      ? router.replace(
           condition === true ? href : fallBack ? fallBack : router.asPath
         )
-      : router.push(href);
+      : router.replace(href);
   }, [condition]);
   return null;
 }
