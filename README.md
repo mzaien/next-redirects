@@ -1,41 +1,41 @@
 # ⛔️ Please upgrade to V 1.9.0 and above ⛔️
 
 # Next-Redirects
-Redirect component for Next.js
+
+Next-Redirects is a small Redirect utility component for Next.js that has the ability to give fallback links for different conditions and with a small package size
 
 ## How to use Next-redirects
 
-There is one component that can be used from the library , it can be used in two and hald ways 
+There is one component that can be used from the library , it can be used in two and hald ways
 
-
--1  If you have a  switch or more than condition
+-1 If you have a switch or more than condition
 
 ```tsx
-if(user.logedin){
-<NextRedirects href="/Dashboard" />
+if (user.logedin) {
+  <NextRedirects href="/Dashboard" />;
 }
-switch(condistionX) {
+switch (condistionX) {
   case admin:
-    <NextRedirects href="/Dashboard" />
+    <NextRedirects href="/Dashboard" />;
     break;
   case anonymous:
-    <NextRedirects href="/Login" />
+    <NextRedirects href="/Login" />;
     break;
   default:
-     <NextRedirects href="/main" />
+    <NextRedirects href="/main" />;
 }
 ```
 
--2 Using NextRedirects component directry 
+-2 Using NextRedirects component directry
 
 ```tsx
-<NextRedirects href="/main" condition={auth.logedin}  />
+<NextRedirects href="/main" condition={auth.logedin} />
 ```
 
--2.1 you can also use it with a fallback link 😆
+-2.5 you can also use it with a fallback link 😆
 
 ```tsx
-<NextRedirects href="/main" condition={auth.logedin} fallback="/login"  />
+<NextRedirects href="/main" condition={auth.logedin} fallback="/login" />
 ```
 
-thats is just and example you can use it for whatever condistion you imagine 🥳 
+this is just and example you can use it for whatever usecases you can imagine 🛠

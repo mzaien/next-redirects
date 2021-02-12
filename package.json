@@ -2,7 +2,7 @@
   "name": "next-redirects",
   "version": "1.9.3",
   "private": false,
-  "description": "Redirect component for Next.js",
+  "description": "A small Redirect utility component for Next.js",
   "source": "src/index.tsx",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
