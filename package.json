@@ -35,10 +35,12 @@
   },
   "peerDependencies": {
     "next": ">= 9.3.6",
-    "react": ">= 16.8.0"
+    "react": ">= 16.8.0",
+    "preact": ">= 10.5.12"
   },
   "devDependencies": {
-    "next": "10.0.6",
+    "next": "latest",
+    "preact": "latest",
     "react": "latest"
   }
 }
