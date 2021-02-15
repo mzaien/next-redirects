@@ -11,10 +11,6 @@
     "./react": "./dist/react",
     "./preact": "./dist/preact"
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
