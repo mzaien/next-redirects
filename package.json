@@ -3,7 +3,7 @@
   "version": "2.0.0-0",
   "private": false,
   "description": "A small Redirect utility component for Next.js",
-  "source": "src/index.tsx",
+  "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -35,7 +35,6 @@
   },
   "peerDependencies": {
     "next": ">= 9.3.6",
-    "preact": ">= 10.5.12",
     "react": ">= 16.8.0"
   },
   "devDependencies": {
