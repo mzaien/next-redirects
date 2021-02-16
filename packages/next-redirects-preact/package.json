@@ -1,6 +1,6 @@
 {
   "name": "next-redirects-preact",
-  "version": "2.0.0-6",
+  "version": "2.0.0-7",
   "private": false,
   "description": "A small Redirect utility component for Next.js",
   "source": "src/index.tsx",
@@ -36,8 +36,8 @@
   },
   "peerDependencies": {
     "next": ">= 9.3.6",
-    "react": ">= 16.8.0",
-    "preact": ">=10.5.12"
+    "preact": ">=10.5.12",
+    "react": ">= 16.8.0"
   },
   "devDependencies": {
     "next": "^10.0.7",
