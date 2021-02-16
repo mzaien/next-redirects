@@ -43,5 +43,6 @@
     "next": "^10.0.7",
     "preact": "latest",
     "react": "latest"
-  }
+  },
+  "gitHead": "7ae4a9733f6c5716ad8efd999f58f52f9b87c9bc"
 }

@@ -3,9 +3,9 @@
   "version": "2.0.0-6",
   "private": true,
   "scripts": {
-    "build": "lerna exec tsdx build --entry src/index.tsx  --entry src/preact.tsx",
+    "build": "lerna exec tsdx build",
     "lint": "tsdx lint src linter",
-    "prepare": "lerna exec tsdx build --entry src/index.tsx  --entry src/preact.tsx"
+    "prepare": "lerna exec tsdx build "
   },
   "repository": {
     "type": "git",
