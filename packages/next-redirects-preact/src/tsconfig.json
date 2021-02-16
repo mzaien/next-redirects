@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "rootDir": "./src",
+    "rootDir": "packages/next-redirects/src",
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -19,9 +19,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src",
+    "packages/next-redirects/src",
     "types",
-    "src/preact"
+    "packages/next-redirects/src/preact"
   ],
   "exclude": ["node_modules"]
 }

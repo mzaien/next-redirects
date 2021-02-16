@@ -1,5 +1,5 @@
 {
-  "name": "next-redirects",
+  "name": "next-redirects-preact",
   "version": "2.0.0-6",
   "private": false,
   "description": "A small Redirect utility component for Next.js",
@@ -9,15 +9,13 @@
   "module": "dist/next-redirects.esm.js",
   "files": [
     "dist/",
-    "src/",
-    "preact/",
     "README.md"
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build --entry src/index.tsx  --entry src/preact.tsx",
+    "build": "tsdx build",
     "lint": "tsdx lint src linter",
-    "prepare": "tsdx build --entry src/index.tsx  --entry src/preact.tsx"
+    "prepare": "tsdx build "
   },
   "repository": {
     "type": "git",
@@ -38,13 +36,12 @@
   },
   "peerDependencies": {
     "next": ">= 9.3.6",
-    "react": ">= 16.8.0"
+    "react": ">= 16.8.0",
+    "preact": ">=10.5.12"
   },
   "devDependencies": {
-    "lerna": "^3.22.1",
     "next": "^10.0.7",
     "preact": "latest",
-    "react": "latest",
-    "tsdx": "github:agilgur5/tsdx#dist-multi"
+    "react": "latest"
   }
 }
