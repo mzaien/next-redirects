@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mzaien/next-redirects.git"
+    "url": "git+https://github.com/Mzaien/next-redirects/tree/main/packages/next-redirects-preact"
   },
   "keywords": [
     "next",
