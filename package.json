@@ -15,9 +15,9 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build --entry src/index.tsx --entry src/preact/index.tsx --entry src/preact.tsx",
+    "build": "tsdx build --entry src/index.tsx  --entry src/preact.tsx",
     "lint": "tsdx lint src linter",
-    "prepare": "tsdx build --entry src/index.tsx --entry src/preact/index.tsx --entry src/preact.tsx"
+    "prepare": "tsdx build --entry src/index.tsx  --entry src/preact.tsx"
   },
   "repository": {
     "type": "git",
