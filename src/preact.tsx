@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from "preact/hooks";
 import { useRouter } from "next/router";
 
 type nextRedirectsprop = {
@@ -10,7 +10,7 @@ type nextRedirectsprop = {
 export default function Redirects({
   href,
   condition,
-  fallBack,
+  fallBack
 }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {

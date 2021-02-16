@@ -3,21 +3,21 @@
   "version": "2.0.0-4",
   "private": false,
   "description": "A small Redirect utility component for Next.js",
-  "source": "src/index.tsx",
+  "source": "preact/index.tsx",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "module": "dist/next-redirects.esm.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "files": [
     "dist/",
-    "src/",
-    "preact/",
     "README.md"
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build --entry src/index.tsx --entry src/preact/index.tsx --entry src/preact.tsx",
+    "build": "tsdx build --entry src/preact/index.tsx",
     "lint": "tsdx lint src linter",
-    "prepare": "tsdx build --entry src/index.tsx --entry src/preact/index.tsx --entry src/preact.tsx"
+    "prepare": "tsdx build --entry src/preact/index.tsx"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
   },
   "peerDependencies": {
     "next": ">= 9.3.6",
+    "preact":">=10.5.12",
     "react": ">= 16.8.0"
   },
   "devDependencies": {
