@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "lerna exec tsdx build",
-    "lint": "tsdx lint src linter",
+    "lint": "lerna exec tsdx lint",
     "prepare": "lerna exec tsdx build "
   },
   "repository": {
@@ -17,7 +17,7 @@
   "devDependencies": {
     "lerna": "^3.22.1",
     "next": "^10.0.7",
-    "preact": "latest",
-    "react": "latest"
+    "preact": "^10.5.12",
+    "react": "^17.0.1"
   }
 }
