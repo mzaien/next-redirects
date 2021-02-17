@@ -1,19 +1,15 @@
-# ⛔️ Please upgrade to V 2.0.0 and above ⛔️
-
-- major changes for v2 instead of <NextRedirects/> you can use <Redirects/> 😆 for better DX
-
-- Suppouted Preact in v2 so all next.js project can work with
-  to install it
-  ```zsh
-  #using yarn
-  yarn add Next-Redirects-preact
-  #using npm
-  npm i Next-Redirects-preact
-  ```
-
 # Next-Redirects-preact
 
 Next-Redirects-preact is a small Redirect utility component for Next.js that has the ability to give fallback links for different conditions and with a small package size,that support Preact
+
+how to install :
+
+```zsh
+#using yarn
+yarn add Next-Redirects-preact
+#using npm
+npm i Next-Redirects-preact
+```
 
 ## How to use Next-Redirects-preact
 
