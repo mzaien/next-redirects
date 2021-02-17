@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-16](https://github.com/Mzaien/next-redirects/compare/v2.0.0-15...v2.0.0-16) (2021-02-17)
+
+**Note:** Version bump only for package root
+
+
+
+
+
 # [2.0.0-15](https://github.com/Mzaien/next-redirects/compare/v2.0.0-14...v2.0.0-15) (2021-02-17)
 
 **Note:** Version bump only for package root
