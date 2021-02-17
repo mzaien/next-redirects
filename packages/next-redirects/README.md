@@ -14,9 +14,9 @@
 
 ```zsh
   #using yarn
-  yarn add Next-Redirects-preact
+  yarn add Next-Redirects
   #using npm
-  npm i Next-Redirects-preact
+  npm i Next-Redirects
 ```
 
 # Next-Redirects
