@@ -1,6 +1,6 @@
 {
   "name": "next-redirects",
-  "version": "2.0.0-12",
+  "version": "2.0.0-13",
   "private": false,
   "description": "A small Redirect utility component for Next.js",
   "source": "src/index.tsx",
