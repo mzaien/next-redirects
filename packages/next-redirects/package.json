@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "next": "^10.0.7",
-    "react": "latest"
+    "react": "^17.0.1"
   },
   "gitHead": "7ae4a9733f6c5716ad8efd999f58f52f9b87c9bc"
 }
