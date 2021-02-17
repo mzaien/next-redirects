@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-14](http://github.com/Mzaien/next-redirects/tree/main/packages/next-redirects-preact/compare/v2.0.0-13...v2.0.0-14) (2021-02-17)
+
+**Note:** Version bump only for package next-redirects-preact
+
+
+
+
+
 # [2.0.0-13](http://github.com/Mzaien/next-redirects/tree/main/packages/next-redirects-preact/compare/v2.0.0-12...v2.0.0-13) (2021-02-17)
 
 **Note:** Version bump only for package next-redirects-preact
