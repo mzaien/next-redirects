@@ -39,5 +39,9 @@
   "peerDependencies": {
     "next": ">= 9.3.6",
     "react": ">= 16.8.0"
+  },
+  "devDependencies": {
+    "next": "^10.0.8-canary.5",
+    "react": "latest"
   }
 }
