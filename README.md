@@ -34,6 +34,8 @@ There is one component that can be used from the library , it can be used in two
 
 **V2.X.X**
 
+-1 If you have a switch or more than condition
+
 ```tsx
 if (user.logedin) {
   <Redirects href="/Dashboard" />;
@@ -63,6 +65,7 @@ switch (condistionX) {
 ```
 
 **V2.0.x**
+
 -1 If you have a switch or more than condition
 
 ```tsx
