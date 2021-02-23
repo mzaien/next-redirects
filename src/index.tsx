@@ -3,22 +3,22 @@ import { useRouter } from "next/router";
 
 interface nextRedirectsprop {
   href: string;
-  condition?: boolean;
+  status?: boolean;
   fallBack?: string;
 }
 
 export default function Redirects({
   href,
-  condition,
+  status,
   fallBack,
 }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {
-    condition !== undefined
+    status !== undefined
       ? router.replace(
-          condition === true ? href : fallBack ? fallBack : router.asPath
+          status === true ? href : fallBack ? fallBack : router.asPath
         )
       : router.replace(href);
-  }, [condition]);
+  }, [status]);
   return null;
 }
