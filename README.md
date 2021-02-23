@@ -28,7 +28,7 @@ Next-Redirects is a small Redirect utility component for Next.js that has the ab
   npm i Next-Redirects
 ```
 
-## How to use use
+## How to use
 
 There is one component that can be used from the library , it can be used in two and hald ways
 
