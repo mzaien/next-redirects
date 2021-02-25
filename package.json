@@ -41,7 +41,7 @@
     "react": ">= 16.8.0"
   },
   "devDependencies": {
-    "next": "^10.0.8-canary.5",
+    "next": "^10.0.8-canary.8",
     "react": "latest"
   }
 }

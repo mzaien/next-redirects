@@ -59,20 +59,20 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.1.tgz#9daf5745156fd84b8e9889a2dc721f0c58e894aa"
   integrity sha512-CAEbWH7OIur6jEOzaai83jq3FmKmv4PmX1JYfs9IrYcGEVI/lyL1EXJGCj7eFVJ0bg5QR8LMxBlEtA+xKiLpFw==
 
-"@next/env@10.0.8-canary.5":
-  version "10.0.8-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/env/-/env-10.0.8-canary.5.tgz#9329b59f03dd07af6357aaf1719606c32dec025b"
-  integrity sha512-5i95Zz4SVuKlfbCaiArH3VZuCdalzrKx4jFWU/sbxyw8qT9ckPNkali7mbgOjzZ5SsAV20jKVimG+w0ovdeZnA==
+"@next/env@10.0.8-canary.8":
+  version "10.0.8-canary.8"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-10.0.8-canary.8.tgz#6ec097fd8d705362d2b5fb765399cad55b6f2aa6"
+  integrity sha512-MLgB251d2b8kjs97WnBxSUc3AuBWLdjblRatZhkcpntkrvf0n3J2w8xDwRls9fGrI4jitzbfsrYD8kH0eAwqnQ==
 
-"@next/polyfill-module@10.0.8-canary.5":
-  version "10.0.8-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/polyfill-module/-/polyfill-module-10.0.8-canary.5.tgz#05ae327af81e332a37ceb1a0a445090f9ffc1d08"
-  integrity sha512-crhyTBbYFRpuZZxxBxrUlaOEx+wA6MEDXlveXb1fAMdgjluzdC9UeEfGfq5aOjgpxiWZgpaaqlft8nGFn7Xqhw==
+"@next/polyfill-module@10.0.8-canary.8":
+  version "10.0.8-canary.8"
+  resolved "https://registry.yarnpkg.com/@next/polyfill-module/-/polyfill-module-10.0.8-canary.8.tgz#7870f561b809fa13ceed7349c6e486731d5b0a61"
+  integrity sha512-Ypxvj5lkraEuLU4DJv0g/yp1TD3Xxi2jBI0M9HQR+0YereMrrK0c5/sjMVQ0jcAdMS3WBLB55EG6TxNGaafSWw==
 
-"@next/react-dev-overlay@10.0.8-canary.5":
-  version "10.0.8-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-10.0.8-canary.5.tgz#7dae422060e5f6358b8734c623a80afd00af268a"
-  integrity sha512-VadNoxkpwFTiqydKHUJ+9unHk4bmlBt46+hydoT/ByRYsMz1FiHwpl8q6BurUjYCk668FnfUSZ3xqiidKGuwSQ==
+"@next/react-dev-overlay@10.0.8-canary.8":
+  version "10.0.8-canary.8"
+  resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-10.0.8-canary.8.tgz#00f31cebd61645c3d2adb489cf2e8e320e9a7550"
+  integrity sha512-JG66eHBwOOtaCWn9z0KYbAb9c04zCF4Ftzip9fLuY6qYLZuj1Cpfd9f/TcdTY3zxAw0UvwSxPyHYuCJ6Iu5zgA==
   dependencies:
     "@babel/code-frame" "7.12.11"
     anser "1.4.9"
@@ -86,10 +86,10 @@
     stacktrace-parser "0.1.10"
     strip-ansi "6.0.0"
 
-"@next/react-refresh-utils@10.0.8-canary.5":
-  version "10.0.8-canary.5"
-  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.0.8-canary.5.tgz#257ff8bba959ac0d8744f281a8ec828aa1af1b21"
-  integrity sha512-PV7iVQvMaUG/J8HGAhtxTxUmT2eYJvJmKScDYElFKGnnJDldzTrG83A8w1UmoWbuaN30bJVZKs//eQg9OAuJ3g==
+"@next/react-refresh-utils@10.0.8-canary.8":
+  version "10.0.8-canary.8"
+  resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.0.8-canary.8.tgz#c663e26cdf19822f37a5a6fdbb7c90deddd6d905"
+  integrity sha512-cx3TYgGWxkBxDv99vgsgPIeGnNwhiXirtVSvaARdO9FToDzrabvaAnlHNyi7g8QyLw3U3wZt06ejnC1ky1NLWw==
 
 "@opentelemetry/api@0.14.0":
   version "0.14.0"
@@ -179,14 +179,14 @@ binary-extensions@^2.0.0:
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.9:
-  version "4.11.9"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.9.tgz#26d556829458f9d1e81fc48952493d0ba3507828"
-  integrity sha512-E6QoYqCKZfgatHTdHzs1RRKP7ip4vvm+EyRUeE2RF0NblwVvb0p6jSVeNTOFxPn26QXN2o6SMfNxKp6kU8zQaw==
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
+  integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
 
 bn.js@^5.0.0, bn.js@^5.1.1:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.1.3.tgz#beca005408f642ebebea80b042b4d18d2ac0ee6b"
-  integrity sha512-GkTiFpjFtUzU9CbMeJ5iazkCzGL3jrhzerzZIuqLABjbwRaFt33I9tUdSNryIptM+RxDet6OKm2WnLXzW51KsQ==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.2.0.tgz#358860674396c6997771a9d051fcc1b57d4ae002"
+  integrity sha512-D7iWRBvnZE8ecXiLj/9wbxH7Tk79fAh8IHaTNq1RWRixsS02W+5qS+iE9yq6RYl0asXx5tw0bLhmT5pIfbSquw==
 
 braces@~3.0.2:
   version "3.0.2"
@@ -305,9 +305,9 @@ bytes@3.1.0:
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
 
 caniuse-lite@^1.0.30001173, caniuse-lite@^1.0.30001179:
-  version "1.0.30001189"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001189.tgz#f8547299b9db78d3882b0dea1cae891fed1651e8"
-  integrity sha512-BSfxClP/UWCD0RX1h1L+vLDexNSJY7SfOtbJtW10bcnatfj3BcoietUFYNwWreOCk+SNvGUaNapGqUNPiGAiSA==
+  version "1.0.30001192"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001192.tgz#b848ebc0ab230cf313d194a4775a30155d50ae40"
+  integrity sha512-63OrUnwJj5T1rUmoyqYTdRWBqFFxZFlyZnRRjDR8NSUQFB6A+j/uBORU/SyJ5WzDLg4SPiZH40hQCBNdZ/jmAw==
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -519,9 +519,9 @@ domain-browser@^1.1.1:
   integrity sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
 
 electron-to-chromium@^1.3.634:
-  version "1.3.670"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.670.tgz#b1560b9ab212ff77fc8197002e735b72882c31be"
-  integrity sha512-iiHQa72+3wbkPR0O8InsNbRwKcV6gBEKiUqPaJ4+TOwQkJQY4ku1sBNC+0ZSfANQ0nqr0SyRO3/Qr6S7Lct/IA==
+  version "1.3.673"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.673.tgz#b4f81c930b388f962b7eba20d0483299aaa40913"
+  integrity sha512-ms+QR2ckfrrpEAjXweLx6kNCbpAl66DcW//3BZD4BV5KhUgr0RZRce1ON/9J3QyA3JO28nzgb5Xv8DnPr05ILg==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -797,9 +797,9 @@ lodash.sortby@^4.7.0:
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
 lodash@^4.17.13:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -869,17 +869,17 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next@^10.0.8-canary.5:
-  version "10.0.8-canary.5"
-  resolved "https://registry.yarnpkg.com/next/-/next-10.0.8-canary.5.tgz#bde2351d28bb33df35d5c05ef6e957568a7217d0"
-  integrity sha512-fE+mQj/0m8aoQMwlHNCA0Pa2/4nMr2dykTIwH1SXP7rWBUZckYIVkPHOkyqZzVTP3cDuj91cQP8+UYipBaiyKg==
+next@^10.0.8-canary.8:
+  version "10.0.8-canary.8"
+  resolved "https://registry.yarnpkg.com/next/-/next-10.0.8-canary.8.tgz#ee5827710d2b73c5bb017a12d63ebe800a082429"
+  integrity sha512-bd+JpHNYqjy2SPeQCS1hLF61ksx46Sk7SUThmSV0vCT2kl8nPU3j6D3ZINxgpPdjOEQjnS6OYDBpamOfnSfmTA==
   dependencies:
     "@babel/runtime" "7.12.5"
     "@hapi/accept" "5.0.1"
-    "@next/env" "10.0.8-canary.5"
-    "@next/polyfill-module" "10.0.8-canary.5"
-    "@next/react-dev-overlay" "10.0.8-canary.5"
-    "@next/react-refresh-utils" "10.0.8-canary.5"
+    "@next/env" "10.0.8-canary.8"
+    "@next/polyfill-module" "10.0.8-canary.8"
+    "@next/react-dev-overlay" "10.0.8-canary.8"
+    "@next/react-refresh-utils" "10.0.8-canary.8"
     "@opentelemetry/api" "0.14.0"
     ast-types "0.13.2"
     browserslist "4.16.1"
@@ -910,7 +910,7 @@ next@^10.0.8-canary.5:
     styled-jsx "3.3.2"
     use-subscription "1.5.1"
     vm-browserify "1.1.2"
-    watchpack "2.0.0-beta.13"
+    watchpack "2.1.1"
 
 node-fetch@2.6.1:
   version "2.6.1"
@@ -954,9 +954,9 @@ node-libs-browser@^2.2.1:
     vm-browserify "^1.0.1"
 
 node-releases@^1.1.69:
-  version "1.1.70"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.70.tgz#66e0ed0273aa65666d7fe78febe7634875426a08"
-  integrity sha512-Slf2s69+2/uAD79pVVQo8uSiC34+g8GWY8UH2Qtqv34ZfhYrxpYpfzs9Js9d6O0mbDmALuxaTlplnBTnSELcrw==
+  version "1.1.71"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.71.tgz#cb1334b179896b1c89ecfdd4b725fb7bbdfc7dbb"
+  integrity sha512-zR6HoT6LrLCRBwukmrVbHv0EpEQjksO6GmFcZQQuCAy139BEsoVKPYnf3jongYW83fAa1torLGYwxxky/p28sg==
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
@@ -1502,10 +1502,10 @@ vm-browserify@1.1.2, vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-watchpack@2.0.0-beta.13:
-  version "2.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.0.0-beta.13.tgz#9d9b0c094b8402139333e04eb6194643c8384f55"
-  integrity sha512-ZEFq2mx/k5qgQwgi6NOm+2ImICb8ngAkA/rZ6oyXZ7SgPn3pncf+nfhYTCrs3lmHwOxnPtGLTOuFLfpSMh1VMA==
+watchpack@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.1.1.tgz#e99630550fca07df9f90a06056987baa40a689c7"
+  integrity sha512-Oo7LXCmc1eE1AjyuSBmtC3+Wy4HcV8PxWh2kP6fOl8yTlNS7r0K9l1ao2lrrUza7V39Y3D/BbJgY8VeSlc5JKw==
   dependencies:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
