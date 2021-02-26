@@ -7,6 +7,7 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "build": "tsdx build tsdx build --entry src/index.tsx --name index ",
     "lint": "lerna exec tsdx lint",
