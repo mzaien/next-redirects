@@ -1,17 +1,13 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-interface nextRedirectsprop {
+export interface nextRedirectsprop {
   href: string;
   status?: boolean;
   fallBack?: string;
 }
 
-export default function Redirects({
-  href,
-  status,
-  fallBack,
-}: nextRedirectsprop) {
+export function Redirects({ href, status, fallBack }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {
     status !== undefined
