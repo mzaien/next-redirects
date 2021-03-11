@@ -37,7 +37,7 @@ There is one component that can be used from the library , it can be used in two
 -1 If you have a switch or more than condition
 
 ```tsx
-if (user.logedin) {
+if (user.loggedin) {
   <Redirects href="/Dashboard" />;
 }
 switch (condistionX) {
@@ -55,13 +55,13 @@ switch (condistionX) {
 -2 Using Next-Redirects component directry
 
 ```tsx
-<Redirects href="/main" status={auth.logedin} />
+<NextRedirects href="/main" status={auth.loggedin} />
 ```
 
 -2.5 you can also use it with a fallback link 😆
 
 ```tsx
-<Redirects href="/main" status={auth.logedin} fallback="/login" />
+<NextRedirects href="/main" status={auth.loggedin} fallback="/login" />
 ```
 
 **V2.0.x**
@@ -69,31 +69,31 @@ switch (condistionX) {
 -1 If you have a switch or more than condition
 
 ```tsx
-if (user.logedin) {
-  <Redirects href="/Dashboard" />;
+if (user.loggedin) {
+  <NextRedirects href="/Dashboard" />;
 }
 switch (condistionX) {
   case admin:
-    <Redirects href="/Dashboard" />;
+    <NextRedirects href="/Dashboard" />;
     break;
   case anonymous:
-    <Redirects href="/Login" />;
+    <NextRedirects href="/Login" />;
     break;
   default:
-    <Redirects href="/main" />;
+    <NextRedirects href="/main" />;
 }
 ```
 
 -2 Using Next-Redirects component directry
 
 ```tsx
-<Redirects href="/main" condition={auth.logedin} />
+<Redirects href="/main" condition={auth.loggedin} />
 ```
 
 -2.5 you can also use it with a fallback link 😆
 
 ```tsx
-<Redirects href="/main" condition={auth.logedin} fallback="/login" />
+<Redirects href="/main" condition={auth.loggedin} fallback="/login" />
 ```
 
 this is just and example you can use it for whatever usecases you can imagine 🛠
