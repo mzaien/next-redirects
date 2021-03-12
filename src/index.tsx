@@ -11,10 +11,10 @@ export function Redirects({ href, status, fallBack }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {
     status !== undefined
-      ? router.replace(
+      ? router.push(
           status === true ? href : fallBack ? fallBack : router.asPath
         )
-      : router.replace(href);
+      : router.push(href);
   }, [status]);
   return null;
 }
