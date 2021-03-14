@@ -10,6 +10,14 @@ export interface nextRedirectsprop {
 export function Redirects({ href, status, fallBack }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {
+    router.prefetch(href);
+  }, []);
+  fallBack !== undefined
+    ? useEffect(() => {
+        router.prefetch(href);
+      }, [])
+    : null;
+  useEffect(() => {
     status !== undefined
       ? router.push(
           status === true ? href : fallBack ? fallBack : router.asPath
