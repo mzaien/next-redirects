@@ -26,10 +26,12 @@ export function Redirects({
     status !== undefined
       ? router.push(
           status === true ? href : fallBack ? fallBack : router.asPath,
-          undefined,
+          status === true ? href : fallBack,
           { shallow: shallow !== undefined ? shallow : false }
         )
-      : router.push(href, href, { shallow: shallow !== undefined ? shallow : false });
+      : router.push(href, href, {
+          shallow: shallow !== undefined ? shallow : false,
+        });
   }, [status]);
   return null;
 }
