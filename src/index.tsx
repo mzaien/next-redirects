@@ -27,9 +27,9 @@ export function Redirects({
       ? router.push(
           status === true ? href : fallBack ? fallBack : router.asPath,
           undefined,
-          { shallow: shallow || false }
+          { shallow: shallow !== undefined ? shallow : false }
         )
-      : router.push(href, undefined, { shallow: shallow || false });
+      : router.push(href, href, { shallow: shallow !== undefined ? shallow : false });
   }, [status]);
   return null;
 }
