@@ -6,6 +6,7 @@ export interface nextRedirectsprop {
   status?: boolean;
   shallow?: boolean;
   fallBack?: string;
+  asPath?: string;
 }
 
 export function Redirects({
@@ -13,6 +14,7 @@ export function Redirects({
   status,
   fallBack,
   shallow,
+  asPath,
 }: nextRedirectsprop) {
   const router = useRouter();
   status !== undefined && status === true
@@ -26,7 +28,7 @@ export function Redirects({
     status !== undefined
       ? router.push(
           status === true ? href : fallBack ? fallBack : router.asPath,
-          status === true ? href : fallBack,
+          asPath === undefined ? undefined : status === true ? href : fallBack,
           { shallow: shallow !== undefined ? shallow : false }
         )
       : router.push(href, href, {
