@@ -9,14 +9,13 @@ export interface nextRedirectsprop {
 
 export function Redirects({ href, status, fallBack }: nextRedirectsprop) {
   const router = useRouter();
-  useEffect(() => {
-    router.prefetch(href);
-  }, []);
-  fallBack !== undefined
+  status !== undefined && status === true
     ? useEffect(() => {
         router.prefetch(href);
       }, [])
-    : null;
+    : useEffect(() => {
+        router.prefetch(`${fallBack}`);
+      }, []);
   useEffect(() => {
     status !== undefined
       ? router.push(
