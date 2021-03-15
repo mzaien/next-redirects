@@ -31,7 +31,7 @@ export function Redirects({
           asPath,
           { shallow: shallow !== undefined ? shallow : false }
         )
-      : router.push(href, href, {
+      : router.push(href, asPath, {
           shallow: shallow !== undefined ? shallow : false,
         });
   }, [status]);
