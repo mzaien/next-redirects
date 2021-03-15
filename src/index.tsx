@@ -28,7 +28,7 @@ export function Redirects({
     status !== undefined
       ? router.push(
           status === true ? href : fallBack ? fallBack : router.asPath,
-          asPath === undefined ? undefined : status === true ? href : fallBack,
+          asPath,
           { shallow: shallow !== undefined ? shallow : false }
         )
       : router.push(href, href, {
