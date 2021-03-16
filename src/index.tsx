@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import Head from "next/head";
 
 export interface nextRedirectsprop {
   href: string;
@@ -36,14 +35,5 @@ export function Redirects({
           shallow: shallow !== undefined ? shallow : false,
         });
   }, [status]);
-  return (
-    <Head>
-      <noscript>
-        <meta
-          httpEquiv="refresh"
-          content={`0;url=${status === true ? href : fallBack}`}
-        />
-      </noscript>
-    </Head>
-  );
+  return null;
 }
