@@ -38,9 +38,11 @@ export function Redirects({
   }, [status]);
   return (
     <Head>
-      {/* Redirects with meta refresh if no JavaScript support */}
       <noscript>
-        <meta httpEquiv="refresh" content={`0;url=${href}`} />
+        <meta
+          httpEquiv="refresh"
+          content={`0;url=${status === true ? href : fallBack}`}
+        />
       </noscript>
     </Head>
   );
