@@ -17,23 +17,19 @@ export function Redirects({
   asPath,
 }: nextRedirectsprop) {
   const router = useRouter();
-  status !== undefined && status === true
-    ? useEffect(() => {
-        router.prefetch(href);
-      }, [status])
-    : useEffect(() => {
-        router.prefetch(`${fallBack}`);
-      }, [status]);
+  status !== undefined && status === true;
   useEffect(() => {
     status !== undefined
-      ? router.push(
+      ? (router.push(
           status === true ? href : fallBack ? fallBack : router.asPath,
           asPath,
           { shallow: shallow !== undefined ? shallow : false }
-        )
-      : router.push(href, asPath, {
+        ),
+        router.prefetch(status === true ? href : `${fallBack}`))
+      : (router.push(href, asPath, {
           shallow: shallow !== undefined ? shallow : false,
-        });
+        }),
+        router.prefetch(href));
   }, [status]);
   return null;
 }
