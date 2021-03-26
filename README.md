@@ -11,7 +11,6 @@
 
 Next-Redirects is a small Redirect utility component for Next.js that can give fallback links for different conditions and with a small package size
 
-
 ## Features
 
 - 🔥 Small and Fast
