@@ -46,5 +46,5 @@ export function Redirects({
           }));
     }
   }, [status]);
-  return null;
+  return Redirects;
 }
