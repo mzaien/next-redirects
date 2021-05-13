@@ -9,8 +9,7 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "tsdx build tsdx build --name index ",
-    "lint": "lerna exec tsdx lint",
+    "build": "tsdx build --name index ",
     "prepare": "tsdx build "
   },
   "files": [
