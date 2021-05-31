@@ -31,6 +31,6 @@ export function Redirects({
             shallow: shallow !== undefined ? shallow : false,
           }));
     }
-  }, []);
+  }, [status]);
   return null;
 }
