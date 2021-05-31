@@ -7,15 +7,6 @@ export interface nextRedirectsprop {
   status?: boolean;
   shallow?: boolean;
   fallBack?: string;
-  query?:
-    | string
-    | number
-    | boolean
-    | readonly string[]
-    | readonly number[]
-    | readonly boolean[]
-    | null
-    | undefined;
 }
 
 export function Redirects({
@@ -24,7 +15,6 @@ export function Redirects({
   fallBack,
   shallow,
   asPath,
-  query,
 }: nextRedirectsprop) {
   const router = useRouter();
   useEffect(() => {
@@ -35,19 +25,14 @@ export function Redirects({
             {
               pathname:
                 status === true ? href : fallBack ? fallBack : router.asPath,
-              query: { url: query || null },
             },
             asPath,
             { shallow: shallow !== undefined ? shallow : false }
           ))
         : (router.prefetch(href),
-          router.push(
-            { pathname: href, query: { url: query || null } },
-            asPath,
-            {
-              shallow: shallow !== undefined ? shallow : false,
-            }
-          ));
+          router.push({ pathname: href }, asPath, {
+            shallow: shallow !== undefined ? shallow : false,
+          }));
     }
   }, [status]);
   return null;
