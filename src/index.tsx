@@ -35,13 +35,13 @@ export function Redirects({
             {
               pathname:
                 status === true ? href : fallBack ? fallBack : router.asPath,
-              query: { state: query },
+              query: { url: query },
             },
             asPath,
             { shallow: shallow !== undefined ? shallow : false }
           ))
         : (router.prefetch(href),
-          router.push({ pathname: href, query: { state: query } }, asPath, {
+          router.push({ pathname: href, query: { url: query } }, asPath, {
             shallow: shallow !== undefined ? shallow : false,
           }));
     }

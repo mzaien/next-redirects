@@ -39,7 +39,7 @@ You can use all these props with `<Redirects>` component
 | fallBack |                                       (optional) The Fallback link if the condition is false                                        | String                                                   |
 | asPath   |                           (optional) The path mask if you want to show a different url than the real one                            | string                                                   |
 | shallow  |            (optional) The shallow option in next router for [more info](https://nextjs.org/docs/routing/shallow-routing)            | boolean                                                  |
-| query    | (optional) This props gives you the ability to send data with the direct you can access it via router.query.state on the other page | String, Number, Boolean as an array or as a single value |
+| query    | (optional) This props gives you the ability to send data with the direct you can access it via router.query.url on the other page | String, Number, Boolean as an array or as a single value |
 
 ```tsx
 <Redirects href="/main" status={auth.loggedin} />
