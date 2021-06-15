@@ -41,9 +41,12 @@
     "react": ">= 16.8.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.8",
-    "next": "^10.2.3",
+    "@types/react": "^17.0.11",
+    "next": "^11.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "dependencies": {
+    "nookies": "^2.5.2"
   }
 }
