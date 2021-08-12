@@ -15,7 +15,7 @@ Next-Redirects is a small Redirect utility component for Next.js that can give f
 
 - 🔥 Small and Fast
 - 🛠 Fully supports esm
-- 💜 supported Preact in v2 so all next.js project using Preact [Next-redirects-preact](https://www.npmjs.com/package/next-redirects-preact)
+- 💜 supported Preact so all next.js project using Preact [Next-redirects-preact](https://www.npmjs.com/package/next-redirects-preact)
 
 ## How to install
 
