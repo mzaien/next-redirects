@@ -32,19 +32,19 @@ There is one component that can be used, it can be used in more than one way
 
 You can use all these props with `<Redirects>` component
 
-| Prop     |                                                                usage                                                                | type                                                     |
-| :------- | :---------------------------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------- |
-| href     |                                                  The link you want to redirect to                                                   | String                                                   |
-| status   |                                             The boolean that decides to redirect or not                                             | boolean                                                  |
-| fallBack |                                       (optional) The Fallback link if the condition is false                                        | String                                                   |
-| asPath   |                           (optional) The path mask if you want to show a different url than the real one                            | string                                                   |
-| shallow  |            (optional) The shallow option in next router for [more info](https://nextjs.org/docs/routing/shallow-routing)            | boolean                                                  |
+| Prop      |                                                     usage                                                     | type    |
+| :-------- | :-----------------------------------------------------------------------------------------------------------: | ------- |
+| href      |                                       The link you want to redirect to                                        | String  |
+| condition |                                  The boolean that decides to redirect or not                                  | boolean |
+| fallBack  |                            (optional) The Fallback link if the condition is false                             | String  |
+| asPath    |                (optional) The path mask if you want to show a different url than the real one                 | string  |
+| shallow   | (optional) The shallow option in next router for [more info](https://nextjs.org/docs/routing/shallow-routing) | boolean |
 
 ```tsx
-<Redirects href="/main" status={auth.loggedin} />
+<Redirects href="/main" condition={auth.loggedin} />
 ```
 
-If you have a switch or more than the status
+If you have a switch or more than the condition
 
 ```tsx
 if (user.loggedin) {

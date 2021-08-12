@@ -4,14 +4,14 @@ import { useRouter } from "next/router";
 export interface nextRedirectsprop {
   href: string;
   asPath?: string;
-  status?: boolean;
+  condition?: boolean;
   shallow?: boolean;
   fallBack?: string;
 }
 
 export function Redirects({
   href,
-  status,
+  condition,
   fallBack,
   shallow,
   asPath,
@@ -19,10 +19,10 @@ export function Redirects({
   const router = useRouter();
   useEffect(() => {
     if (typeof window !== "undefined") {
-      status !== undefined
-        ? (router.prefetch(status === true ? href : `${fallBack}`),
+      condition !== undefined
+        ? (router.prefetch(condition === true ? href : `${fallBack}`),
           router.push(
-            status === true ? href : fallBack ? fallBack : router.asPath,
+            condition === true ? href : fallBack ? fallBack : router.asPath,
             asPath,
             { shallow: shallow !== undefined ? shallow : false }
           ))
@@ -31,6 +31,6 @@ export function Redirects({
             shallow: shallow !== undefined ? shallow : false,
           }));
     }
-  }, [status]);
+  }, [condition]);
   return null;
 }
