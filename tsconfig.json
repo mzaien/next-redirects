@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "rootDir": "pages",
+    "rootDir": "src",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages", "types"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src", "types"],
   "exclude": ["node_modules"]
 }
