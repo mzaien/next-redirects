@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
 export type nextRedirectsprop = {
   href: string;
@@ -11,7 +11,6 @@ export type nextRedirectsprop = {
 };
 
 export type serverRedirectProps = {
-  req: NextRequest;
   condition: string;
   url: string;
 };
@@ -41,6 +40,7 @@ export function Redirects({
   }, [condition]);
   return null;
 }
+
 export function serverRedirect({ condition, url }: serverRedirectProps) {
   if (!condition) {
     return NextResponse.rewrite(url);
