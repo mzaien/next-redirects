@@ -11,11 +11,11 @@ export type nextRedirectsprop = {
 };
 
 export type serverRedirectProps = {
-    req: NextRequest;
-    tokenName: string;
-    url: string;
-    statusCode?: number;
-  };
+  req: NextRequest;
+  condition: string;
+  url: string;
+};
+
 export function Redirects({
   href,
   condition,
@@ -41,16 +41,9 @@ export function Redirects({
   }, [condition]);
   return null;
 }
-export function serverRedirect({
-    req,
-    tokenName,
-    url,
-    statusCode,
-  }: serverRedirectProps) {
-    const token = req.cookies[tokenName];
-    if (!token) {
-      return NextResponse.redirect(url, statusCode);
-    }
-    return NextResponse.next();
+export function serverRedirect({ condition, url }: serverRedirectProps) {
+  if (!condition) {
+    return NextResponse.rewrite(url);
   }
-  
+  return NextResponse.next();
+}
