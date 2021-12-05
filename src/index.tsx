@@ -36,20 +36,9 @@ export function Redirects({
   return null;
 }
 
-export function serverRewrite(condition: boolean, url: string) {
+export function serverRedirect(condition: boolean, url: string) {
   if (condition) {
     return NextResponse.rewrite(url);
-  }
-  return NextResponse.next();
-}
-
-export async function serverRedirect(
-  condition: boolean,
-  url: string,
-  statusCode?: number
-) {
-  if (condition) {
-    return await NextResponse.redirect(url.toString(), statusCode);
   }
   return NextResponse.next();
 }

@@ -9,10 +9,11 @@
   </a>
 </p>
 
-Next-Redirects is a small Redirect utility component for Next.js that can give fallback links for different conditions and with a small package size
+Next-Redirects is a small Redirect utility for client & serve side for Next.js, with a small package size
 
 ## Features
 
+- ⚛️ Client and Server side
 - 🔥 Small and Fast
 - 🛠 Fully supports esm
 - 💜 supported Preact so all next.js project using Preact [Next-redirects-preact](https://www.npmjs.com/package/next-redirects-preact)
@@ -28,7 +29,7 @@ Next-Redirects is a small Redirect utility component for Next.js that can give f
 
 ## How to use
 
-There is one component that can be used, it can be used in more than one way
+### For the client side, you can use the following code
 
 You can use all these props with `<Redirects>` component
 
@@ -41,12 +42,16 @@ You can use all these props with `<Redirects>` component
 | shallow   | (optional) The shallow option in next router for [more info](https://nextjs.org/docs/routing/shallow-routing) | boolean |
 
 ```tsx
-<Redirects href="/main" condition={auth.loggedin} />
+//X.tsx
+import { Redirects } from "next-redirects";
+<Redirects href="/main" condition={auth.loggedin} />;
 ```
 
 If you have a switch or more than the condition
 
 ```tsx
+//X.tsx
+import { Redirects } from "next-redirects";
 if (user.loggedin) {
   <Redirects href="/Dashboard" />;
 }
@@ -59,6 +64,24 @@ switch (condistionX) {
     break;
   default:
     <Redirects href="/main" />;
+}
+```
+
+### For the server side, you can use the following code
+
+You can use all these props with `serverRedirect()` funcation
+
+| Prop      |                    usage                    | type    |
+| :-------- | :-----------------------------------------: | ------- |
+| condition | The boolean that decides to redirect or not | boolean |
+| url       |      The link you want to redirect to       | String  |
+
+```tsx
+//inside _middleware.ts
+import { serverRedirect } from "next-redirects";
+export async function middleware(req: NextRequest) {
+  const admin = req.cookies.role == "admin";
+  return serverRedirect(admin, "/Upload");
 }
 ```
 
