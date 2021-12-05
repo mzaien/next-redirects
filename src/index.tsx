@@ -43,13 +43,13 @@ export function serverRewrite(condition: boolean, url: string) {
   return NextResponse.next();
 }
 
-export function serverRedirect(
+export async function serverRedirect(
   condition: boolean,
   url: string,
   statusCode?: number
 ) {
   if (condition) {
-    return NextResponse.redirect(url, statusCode);
+    return await NextResponse.redirect(url.toString(), statusCode);
   }
   return NextResponse.next();
 }
