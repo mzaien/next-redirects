@@ -11,6 +11,10 @@
 
 Next-Redirects is a small Redirect utility for client & serve side for Next.js, with a small package size
 
+<hr/>
+
+⚠️ version **3.x** and above is needs next.js **v12** at least ⚠️
+
 ## Features
 
 - ⚛️ Client and Server side

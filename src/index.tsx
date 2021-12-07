@@ -36,8 +36,8 @@ export function Redirects({
   return null;
 }
 
-export function serverRedirect(condition: boolean, url: string) {
-  if (condition) {
+export function serverRewitre(condition: boolean, url: string) {
+  if (condition === true && url != undefined) {
     return NextResponse.rewrite(url);
   }
   return NextResponse.next();
