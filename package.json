@@ -9,9 +9,8 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "tsdx build --name index ",
-    "prepare": "tsdx build",
-    "lint": "next lint"
+    "build": "tsdx build --name index --outDir dist",
+    "prebuild": "rm -rf dist"
   },
   "files": [
     "dist",
@@ -38,15 +37,15 @@
     "url": "https://github.com/Mzaien/next-redirects/issues"
   },
   "peerDependencies": {
-    "next": ">= 9.3.6",
+    "next": ">= 10.2.3",
     "react": ">= 16.8.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.38",
+    "@types/react": "^18.0.0",
     "eslint": "^8.7.0",
     "eslint-config-next": "12.1.4",
-    "next": "^12.0.8",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "^12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   }
 }
