@@ -9,8 +9,8 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "tsdx build --name index --outDir dist",
-    "prebuild": "rm -rf dist"
+    "build": "tsdx build tsdx build --entry src/index.tsx --name index ",
+    "prebuild": "rm -rf dist && tsc --noEmit -p tsconfig.json"
   },
   "files": [
     "dist",
